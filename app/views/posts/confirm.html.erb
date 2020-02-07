@@ -1,0 +1,10 @@
+<%= form_for @post do |f| %>
+  <%= @post.title %>
+  <%= @post.details %>
+  <%= f.hidden_field :title, :value =>  @post.title %>
+  <%= f.hidden_field :details, :value =>  @post.details %>
+
+  <div class="actions">
+    <%= f.submit '投稿する' %>
+  </div>
+<% end %>
